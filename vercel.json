@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
-  "devCommand": "next dev --turbopack",
-  "installCommand": "npm install && npx prisma generate",
-  "framework": "nextjs"
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
 }
